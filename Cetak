@@ -1,0 +1,70 @@
+package Modul6;
+
+public class KomputerCetak extends Komputer implements mouse,Keyboard,printer{
+
+    private void cetaksemua() {
+        PC pc = new PC();
+        pc.hidupkan_os();
+        pc.matikan_os();
+        pc.klik_kanan();
+        pc.klik_kiri();
+        pc.tekan_enter();
+        pc.cetak_data();
+        
+        Laptop laptop = new Laptop();
+        laptop.hidupkan_os();
+        laptop.matikan_os();
+        laptop.klik_kanan();
+        laptop.klik_kiri();
+        laptop.tekan_enter();
+        laptop.cetak_data();
+        
+        Netbook netbook = new Netbook();
+        netbook.hidupkan_os();
+        netbook.matikan_os();
+        netbook.klik_kanan();
+        netbook.klik_kiri();
+        netbook.tekan_enter();
+        netbook.cetak_data();
+    }
+    
+    public static void main(String[] args) {
+        KomputerCetak cetak = new KomputerCetak();
+        cetak.cetaksemua();
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    @Override
+    void hidupkan_os() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    void matikan_os() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void klik_kanan() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void klik_kiri() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void tekan_enter() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void cetak_data() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+}
