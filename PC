@@ -1,0 +1,93 @@
+package Modul6;
+
+public class PC extends Komputer implements mouse, Keyboard, printer {
+
+    @Override
+    void hidupkan_os() {
+        System.out.println("PC dihidupkan OS");
+    }
+
+    @Override
+    void matikan_os() {
+        System.out.println("PC dimatikan OS");
+    }
+
+    public void klik_kanan() {
+        System.out.println("PC diklik kanan oleh Mouse");
+    }
+
+    public void klik_kiri() {
+        System.out.println("PC diklik kiri oleh Mouse");
+    }
+
+    @Override
+    public void tekan_enter() {
+        System.out.println("PC ditekan enter oleh Keyboard");
+    }
+
+    public void cetak_data() {
+        System.out.println("PC dicetak datanya oleh Printer");
+    }
+}
+
+class Laptop extends Komputer implements mouse, Keyboard, printer {
+
+    @Override
+    void hidupkan_os() {
+        System.out.println("\nLaptop dihidupkan OS");
+    }
+
+    @Override
+    void matikan_os() {
+        System.out.println("Laptop dimatikan OS");
+    }
+
+    public void klik_kanan() {
+        System.out.println("Laptop diklik kanan oleh Mouse");
+    }
+
+    public void klik_kiri() {
+        System.out.println("Laptop diklik kiri oleh Mouse");
+    }
+
+    @Override
+    public void tekan_enter() {
+        System.out.println("Laptop ditekan enter oleh Keyboard");
+    }
+
+    public void cetak_data() {
+        System.out.println("Laptop dicetak datanya oleh Printer");
+    }
+
+}
+
+class Netbook extends Komputer implements mouse, Keyboard, printer {
+
+    @Override
+    void hidupkan_os() {
+        System.out.println("\nNetbook dihidupkan OS");
+    }
+
+    @Override
+    void matikan_os() {
+        System.out.println("Netbook dimatikan OS");
+    }
+
+    public void klik_kanan() {
+        System.out.println("Netbook diklik kanan oleh Mouse");
+    }
+
+    public void klik_kiri() {
+        System.out.println("Netbook diklik kiri oleh Mouse");
+    }
+
+    @Override
+    public void tekan_enter() {
+        System.out.println("Netbook ditekan enter oleh Keyboard");
+    }
+
+    public void cetak_data() {
+        System.out.println("Netbook dicetak datanya oleh Printer");
+    }
+
+}
