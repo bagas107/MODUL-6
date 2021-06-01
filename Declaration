@@ -1,0 +1,6 @@
+package modul6;
+
+public abstract class Modul6 implements mouse,Keyboard,printer{
+    abstract void hidupkan_os();
+    abstract void matikan_os();
+}
