@@ -1,0 +1,6 @@
+package Modul6;
+
+public abstract class Komputer implements mouse,Keyboard,printer{
+    abstract void hidupkan_os();
+    abstract void matikan_os();
+}
